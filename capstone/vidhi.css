@@ -1,0 +1,281 @@
+body{
+    margin:0;
+    background-color: #e8f4e8;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    
+}
+.nav span{
+    font-size: 35px;
+    font-family: 'Porter Sans Block', sans-serif;
+
+}
+.nav a{
+    text-decoration: none;
+    color: black;
+    margin-left: 15px;
+    font-size: 20px;
+    font-family: "Calistoga", serif;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    align-items: center;   font-size: 50px;
+    font-family: "Calistoga", serif;
+}
+.header img{
+    height: auto;
+    width: 100%;
+    border-radius: 20px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 20px;
+    gap: 10px;
+    font-family: 'Courier Prime', monospace;
+}
+.grid img{
+    height:auto;
+    width: 450px;
+    margin: 10px;
+}
+.grid h3,p{
+    margin: 0 20px;
+}
+.grid p{
+    margin: 0 20px;
+}
+.welcome{
+    text-align: right; 
+    font-size: 20px; 
+    line-height:30px; 
+    max-width: 100%;
+    margin: 30px;
+    padding: 90px 0;
+    margin-left: 700px;
+    margin-right: 20px;
+    font-family: 'Courier Prime', monospace;
+    
+}
+.touch{
+    border-bottom: 1px solid black;
+    background-image: linear-gradient(white,rgb(241, 213, 161));
+    text-align: center;
+    font-size: 70px;
+    font-family: "Calistoga", serif;
+}
+.touch h2{
+    margin-bottom: 0;
+}
+.para{
+    font-size: 40px;
+    padding:150px;
+    font-family: "Calistoga", serif;
+}
+.contact{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px;
+    margin-bottom: 150px;
+}
+.contact h3{
+    font-size: 20px;
+    font-family: "Calistoga", serif;
+}
+.contact p{
+    margin-top: 50px;
+    font-family: 'Courier Prime', monospace;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid black;
+    margin: 20px;
+    padding:10px ;
+    font-size: 24px;
+    font-family: "Calistoga", serif;
+}
+
+.footer button{
+    padding: 10px;
+    background-color: white;
+    border:1px solid black;
+}
+@media screen and (max-width: 1024px) {
+    .nav span {
+        font-size: 30px;
+    }
+
+    .nav a {
+        font-size: 18px;
+        margin-left: 12px;
+    }
+
+    .header {
+        font-size: 40px;
+        margin: 15px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        margin: 15px;
+    }
+
+    .welcome {
+        margin-left: 350px;
+        margin-right: 15px;
+        padding: 60px 0;
+        font-size: 18px;
+    }
+
+    .touch {
+        font-size: 55px;
+        padding: 30px 0;
+    }
+
+    .para {
+        font-size: 32px;
+        padding: 100px 50px;
+    }
+
+    .contact {
+        margin: 0 20px;
+        margin-bottom: 100px;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .nav {
+        flex-direction: column;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .nav span {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .nav a {
+        font-size: 16px;
+        margin: 5px 0;
+        padding: 5px;
+    }
+
+    .header {
+        font-size: 32px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin: 15px;
+    }
+
+    .grid img {
+        width: 100%;
+        margin: 0;
+    }
+
+    .grid h3 {
+        font-size: 20px;
+        margin: 10px;
+    }
+
+    .grid p {
+        font-size: 16px;
+        margin: 10px;
+    }
+
+    .welcome {
+        text-align: center;
+        margin: 20px;
+        padding: 40px 15px;
+        font-size: 16px;
+    }
+
+    .touch {
+        font-size: 40px;
+        padding: 25px 0;
+    }
+
+    .para {
+        font-size: 24px;
+        padding: 50px 20px;
+    }
+
+    .contact {
+        flex-direction: column;
+        text-align: center;
+        margin: 15px;
+        margin-bottom: 60px;
+    }
+
+    .contact h3 {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    .contact p {
+        margin-top: 20px;
+        font-size: 16px;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        margin: 10px;
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    .footer button {
+        width: 100%;
+        max-width: 200px;
+        margin: 10px 0;
+    }
+}
+
+
+@media screen and (max-width: 380px) {
+    .nav span {
+        font-size: 24px;
+    }
+
+    .nav a {
+        font-size: 14px;
+    }
+
+    .header {
+        font-size: 28px;
+    }
+
+    .touch {
+        font-size: 32px;
+    }
+
+    .para {
+        font-size: 20px;
+        padding: 30px 15px;
+    }
+
+    .grid h3 {
+        font-size: 18px;
+    }
+
+    .grid p {
+        font-size: 14px;
+    }
+}
